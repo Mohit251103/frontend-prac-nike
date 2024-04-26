@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        body{
+            background-color: white;
+        }
+
+        .sidetext {
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        .list_item {
+            /* text-align: center; */
+            width: 120px;
+            height: 70px;
+            border-radius: 24px;
+            /* background-color: grey; */
+            color: white;
+            /* margin: 30px; */
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .list_item:hover{
+            background-color: white;
+            color: black;
+            transition: ease-in-out;
+            transition-delay: 150ms;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <div class="flex h-[100vh] w-[100%] bg-[black]">
+
+        <div class="inline-flex flex-col items-center w-[7%] h-full bg-[#989C9F] relative">
+            <div class="absolute top-5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" width="50px" height="30px">
+            </div>
+            <div
+                class="rotate-90 sidetext tracking-[0.2em] italic text-[white] absolute top-1/2 uppercase w-[65vh] text-xl">
+                <h1>Defy Gravity, Embrace Greatness.</h1>
+            </div>
+        </div>
+        <div class="w-[90%] h-full relative overflow-hidden">
+            <div class="flex justify-center items-center h-[120px]">
+                <!-- <div class="w-full flex justify-center"> -->
+                <ul class="flex justify-center items-center h-[70px] w-[35%] bg-white/20 text-center rounded-3xl backdrop-blur-[10px]">
+                    <li class="list_item">HOME</li>
+                    <li class="list_item">COLLECTION</li>
+                    <li class="list_item">ABOUT</li>
+                    <li class="list_item">CONTACT</li>
+                </ul>
+                <!-- </div> -->
+            </div>
+
+            <div class="absolute left-[8%]">
+                <div class="sidetext text-8xl text-white italic font-extrabold">
+                    <h1>AIR MAX</h1>
+                </div>
+                <div class="sidetext text-5xl text-white italic">
+                    NIKE AIR MAX 90
+                </div>
+            </div>
+            <div class="text-5xl text-white absolute left-[8%] top-[50%]">$98</div>
+            <div class="text-3xl italic text-white capitalize absolute left-[8%] top-[60%]">
+                Soar Beyond Limits with iconic style and <br>
+                unmatched comfort
+            </div>
+            <div class="text-3xl text-white absolute left-[8%] top-[80%] rounded-3xl shadow-sm shadow-grey bg-[grey] p-3 text-black">Buy Now</div>
+
+            <div class="-rotate-[20deg] absolute top-[20%] right-5 ">
+                <img src="Nike-Shoe.png" width="600px">
+            </div>
+            <div class="rounded-full w-2/5 bg-white absolute top-[75%] right-5 h-[20px] blur-3xl"></div>
+        </div>
+    </div>
+    <div class="absolute bottom-0 right-1/5 w-full h-[7%] rounded-full bg-[grey] blur-[120px]"></div>
+</body>
+
+</html>
